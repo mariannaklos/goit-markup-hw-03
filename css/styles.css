@@ -38,8 +38,6 @@ body {
 }
 /* header */
 header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .logo {
@@ -59,6 +57,9 @@ header {
 }
 .list {
   list-style: none;
+}
+nav {
+  margin-left: 93px;
 }
 .nav-item,
 .contact-item {
@@ -84,9 +85,15 @@ header {
 }
 .nav-item {
   color: var(--title-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contact-item {
   color: var(--text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header .container {
   display: flex;
@@ -94,7 +101,6 @@ header {
 }
 .header-nav {
   display: flex;
-  margin-left: 93px;
   column-gap: 50px;
 }
 .header-contact {
@@ -104,6 +110,12 @@ header {
 }
 
 /* hero */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  justify-content: center;
+}
 .hero,
 .footer {
   background-color: #2f303a;
@@ -112,11 +124,11 @@ header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 30px;
+  max-width: 696px;
+  margin: 0 auto 30px;
 }
 .hero-btn {
   background-color: #2196f3;
@@ -139,12 +151,9 @@ header {
   background-color: #188ce8;
 }
 .hero .container {
-  height: 600px;
   text-align: center;
-  padding-top: 200px;
-  padding-left: 283px;
-  padding-right: 286px;
 }
+
 /* benefits */
 .visually-hidden {
   position: absolute;
@@ -178,6 +187,9 @@ header {
   column-gap: 30px;
 }
 /* functions */
+.functions {
+  padding-bottom: 94px;
+}
 .functions-title {
   margin-bottom: 50px;
 }
@@ -193,9 +205,6 @@ header {
   display: flex;
   column-gap: 30px;
 }
-.functions .container {
-  padding-bottom: 94px;
-}
 /* comand */
 .comand {
   background-color: #f5f4fa;
@@ -209,7 +218,6 @@ header {
   line-height: 1.2;
   text-align: center;
   color: var(--title-color);
-  padding-top: 30px;
   margin-bottom: 10px;
 }
 .worker-text {
@@ -217,6 +225,9 @@ header {
   line-height: 1.2;
   text-align: center;
   color: var(--text-color);
+}
+.comand-text {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 .comand .list {
@@ -262,15 +273,22 @@ header {
 .footer-contacts {
   font-style: normal;
 }
-.footer .container {
+footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .mail {
   display: block;
+}
+footer li:first-child {
   margin-bottom: 9px;
 }
+
 /* portfolio */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -306,13 +324,9 @@ header {
 }
 .portfolio-description {
   padding: 20px 24px;
-  border-left: 1px solid #EEEEEE;;
-  border-right: 1px solid #EEEEEE;;
-  border-bottom: 1px solid #EEEEEE;;
-}
-.portfolio .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .buttons {
   display: flex;
@@ -330,9 +344,9 @@ header {
   flex-basis: calc(100% / 3 - 30px);
   background: #ffffff;
   margin-left: 30px;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
-.image {
+img {
   display: block;
   max-width: 100%;
   height: auto;
